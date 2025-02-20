@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme{
+  --font-matemasie: "Matemasie", serif;
+  --font-caveat: "Caveat Brush", serif;
+  --font-pacifico: "Pacifico", serif
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
