@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { useThemeStore } from '../store/themeSlice';
+import { useThemeStore } from '../utils/themeSlice';
 import { FiSun } from 'react-icons/fi';
 import { BsMoonStars } from 'react-icons/bs';
 

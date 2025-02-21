@@ -7,7 +7,7 @@ import ThemeButton from "./ThemeButton";
 export default function SideBar() {
     const [option, setOption] = useState<TitleType>('message')
   return (
-    <div className="top-0 h-screen sticky bg-orange-50 dark:bg-orange-800/60 w-1/12 dark:shadow-orange-200 shadow-lg">
+    <div className="top-0 h-screen sticky bg-orange-50 dark:bg-orange-800/60 w-full dark:shadow-orange-200 shadow-lg">
         <div className="flex justify-center items-center relative h-full">
             <div className="absolute top-0 ml-3">
                 <div className="flex justify-center pt-3 pb-8 ml-0">

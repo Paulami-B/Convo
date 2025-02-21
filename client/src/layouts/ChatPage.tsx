@@ -1,4 +1,5 @@
 import Chats from "../components/Chats";
+import ChatContainer from "../components/ChatContainer";
 
 export default function ChatPage() {
   return (
@@ -6,7 +7,9 @@ export default function ChatPage() {
         <div className="col-span-3">
             <Chats />
         </div>
-        <div className="col-span-8"></div>
+        <div className="col-span-8">
+          <ChatContainer />
+        </div>
     </div>
   )
 }

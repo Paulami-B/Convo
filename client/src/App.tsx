@@ -6,7 +6,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<LazyLoaderWrapper importFunc={() => import("./components/Messages")}/>}/>
+        <Route path="/" element={<LazyLoaderWrapper importFunc={() => import("./pages/AppPage")}/>}/>
         <Route path="/loader" element={<LazyLoaderWrapper importFunc={() => import("./routes/Loader")}/>}/>
       </Routes>
     </BrowserRouter>
