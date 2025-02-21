@@ -9,7 +9,7 @@ export default function MessageBox() {
     const textAreaRef = useRef<HTMLTextAreaElement>(null);
     useAutosizeTextArea(textAreaRef.current, content);
     return (
-        <div className="w-full h-fit flex justify-between items-center gap-3 p-3 border border-gray-100 dark:border-gray-600 bg-white dark:bg-black">
+        <div className="w-full h-fit flex justify-between items-center gap-3 p-3 border-t border-gray-100 dark:border-orange-900 bg-white dark:bg-black">
             <div className="w-full flex items-center bg-orange-50 dark:bg-gray-700/60 p-2 gap-3 rounded-lg">
                 <LiaLinkSolid strokeWidth={0.6} className="text-3xl text-orange-400" />
                 <textarea className="outline-none focus:outline-none focus:ring-0 w-full h-fit rounded-lg placeholder-orange-400 dark:text-white" 
