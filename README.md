@@ -1,3 +1,3 @@
 # Convo
 
-A real time chatting application
+A real time chatting app
