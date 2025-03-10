@@ -2,6 +2,7 @@ import Icon from "./Icon";
 import { Link } from "react-router-dom";
 import { sidebarMenuItems, TitleType } from "../menu/SideBar";
 import { BsMoonStars } from "react-icons/bs";
+import ThemeButton from "./ThemeButton";
 
 export type SideBarPropsTypes = {
     option: TitleType,
@@ -10,7 +11,7 @@ export type SideBarPropsTypes = {
 
 export default function VerticalSideBar({option, setOption}: SideBarPropsTypes) {
   return (
-    <div className="top-0 sticky h-screen w-full bg-orange-50 shadow-lg">
+    <div className="top-0 sticky h-screen w-full bg-orange-50 dark:bg-orange-800/60 dark:shadow-orange-200 shadow-lg">
         <div className="flex justify-center items-center relative h-full">
             <div className="absolute top-0 ml-3">
                 <div className="flex justify-center pt-3 pb-8 ml-0">
@@ -19,11 +20,11 @@ export default function VerticalSideBar({option, setOption}: SideBarPropsTypes) 
                 <ul>
                     {sidebarMenuItems.map((item) =>(
                         <li key={item.title}>
-                            <Link to="/" className={`rounded-lg w-fit h-fit flex justify-center p-2 ml-1 my-8 text-black text-2xl 
+                            <Link to="/" className={`rounded-lg w-fit h-fit flex justify-center p-2 ml-1 my-8 text-black dark:text-orange-50 text-2xl 
                             ${option==item.title ? 
-                                "bg-orange-400 text-white" 
+                                "bg-orange-400 text-white dark:bg-orange-600/80 dark:text-black" 
                                 : 
-                                "hover:bg-orange-300 hover:text-white"}`}
+                                "hover:bg-orange-300 hover:text-white dark:hover:bg-orange-700 dark:hover:text-black"}`}
                             onClick={() => setOption(item.title)}>
                                 {item.icon}
                             </Link>
@@ -35,7 +36,7 @@ export default function VerticalSideBar({option, setOption}: SideBarPropsTypes) 
                 </ul>
             </div>
             <div className="absolute bottom-0">
-                <BsMoonStars className="`rounded-lg w-fit h-fit flex justify-center p-2 ml-1 my-8 text-black text-2xl" strokeWidth={0.4} />
+                <ThemeButton />
                 <Link to="/" className="rounded-lg w-fit h-fit flex justify-center p-2 my-8">
                     <img src="https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D"
                     className="w-12 h-12 rounded-full" />
